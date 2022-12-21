@@ -1,0 +1,187 @@
+@font-face {
+    font-family: Giaza;
+    src: url(../Giaza_Font/Giaza.otf);
+  }
+
+:root {
+    --navabar_text: Arial, Helvetica, sans-serif;
+    --navbar_button_color: rgb(102, 102, 102);
+    --navbar_button_color_hover: rgb(42, 42, 42);
+    --navbar_button_text: white;
+    --navbar_font_size: 15px;
+    --navbar_text_color: black;
+    --navbar_list_padding: 5px;
+
+    --Bottecelli: #24433E;
+	--Snuff: #E2D3E7;
+	--Hinterland: #CCD6E1;
+}
+
+body{
+    background-color: var(--Snuff);
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 1%;
+    width:  80%;
+    margin: 5% 10%;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 4 auto auto auto auto;
+    grid-template-rows: 6 auto auto auto auto auto auto;
+    align-content: center;
+}
+
+.header {
+    grid-column: 1 / span 4;
+    grid-row: 1 / 1;
+    justify-self: center;
+}
+
+.personal {
+    grid-column: 2 / 3;
+    grid-row: 2 / 2;
+    justify-self: center;
+
+    display: grid;
+    grid-template-columns: 1 auto;
+    grid-template-rows: 3 auto auto auto;
+}
+
+.personal h3, p, button{
+    justify-self: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.personal h3, .couple h3, .family h3 {
+    margin-bottom: 0;
+}
+
+.personal p, .couple p, .family p {
+    margin-top: 0;
+}
+
+.couple {
+    grid-column: 3 / 3;
+    grid-row: 2 / 2;
+    justify-self: center;
+
+    display: grid;
+    grid-template-columns: 1 auto;
+    grid-template-rows: 3 auto auto auto;
+}
+
+.couple h3, p, button{
+    justify-self: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.family {
+    grid-column: 4 / 4;
+    grid-row: 2 / 2;
+    justify-self: center;
+
+    display: grid;
+    grid-template-columns: 1 auto;
+    grid-template-rows: 3 auto auto auto;
+}
+
+.family h3, p, button{
+    justify-self: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.features_heading {
+    grid-column: 1 / 1;
+    grid-row: 3 / 3;
+    justify-self: start;
+}
+
+.features_text {
+    grid-column: 1 / 1;
+    grid-row: 4 / 5;
+
+    display: grid;
+    grid-template-columns: 1 auto;
+    grid-template-rows: 4 auto auto auto auto;
+}
+
+.features_text p {
+    justify-self: start;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.feat_i_personal {
+    grid-column: 2 / 2;
+    grid-row: 4 / 5;
+
+    display: grid;
+    grid-template-columns: 1 auto;
+    grid-template-rows: 4 auto auto auto auto;
+}
+
+.feat_i_couple {
+    grid-column: 3 / 3;
+    grid-row:  4 / 5;
+
+    display: grid;
+    grid-template-columns: 1 auto;
+    grid-template-rows: 4 auto auto auto auto;
+}
+
+.feat_i_family {
+    grid-column: 4  / 4;
+    grid-row:  4 / 5;
+
+    display: grid;
+    grid-template-columns: 1 auto;
+    grid-template-rows: 4 auto auto auto auto;
+}
+
+main button {
+    background-color: var(--Hinterland);
+    color: black;
+    border-color: var(--Hinterland);
+    font-size: var(--navbar_font_size);
+    width: 10rem;
+    padding: 10px;
+    border-radius: 7%;
+}
+
+main button:hover{
+    color: white;
+    background-color: var(--Bottecelli);
+    border-color: var(--Bottecelli);
+}
+
+main i {
+    justify-self: center;
+    align-self: center;
+}
+
+.fa-circle-xmark {
+    color: red;
+}
+
+.fa-circle-check{
+    color: green;
+}
+
+main h1 {
+    font-size: 40px;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+h1, h2 {
+    font-family: Giaza, 'Abril Fatface', cursive;
+}
+
+
+
+
